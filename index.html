@@ -3,79 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Video Embed</title>
+    <title>🚀 FREE 1,000,000 ROBUX (2025 WORKING) ✅</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f5f5f5;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
             color: white;
-            width: 100%;
-            padding: 20px 0;
             text-align: center;
+            margin: 0;
+            padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
+        h1 {
+            color: #FF9F43;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 2.5em;
+        }
+        .progress-container {
+            width: 100%;
+            background: #333;
+            border-radius: 10px;
+            margin: 25px 0;
             overflow: hidden;
-            margin-bottom: 20px;
         }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+        .progress-bar {
+            height: 30px;
+            background: linear-gradient(90deg, #FF416C, #FF4B2B);
+            width: 0%;
+            transition: width 0.7s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
-        footer {
-            margin-top: auto;
-            width: 100%;
-            background-color: #333;
+        button {
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
             color: white;
-            text-align: center;
-            padding: 15px 0;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        button:disabled {
+            background: #555;
+            cursor: not-allowed;
+        }
+        .hidden {
+            display: none;
+        }
+        .task {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        .task h3 {
+            color: #FF9F43;
+            margin-top: 0;
+        }
+        .flashing {
+            animation: flash 1s infinite;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        #final-screen {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        #final-screen h2 {
+            color: #FF416C;
+            font-size: 2em;
+        }
+        #rickroll-video {
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 65, 108, 0.5);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Check Out This Amazing Video!</h1>
-    </header>
-    
     <div class="container">
-        <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=1" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
+        <h1>🌟 FREE ROBUX GENERATOR 2025 🌟</h1>
+        <p><em>"Trusted by 10 million users!" (Fake News)</em></p>
         
-        <h2>About This Video</h2>
-        <p>This is one of the most popular videos on YouTube. Enjoy watching it!</p>
+        <div id="start-screen">
+            <p>Enter your Roblox username to claim your <span style="color: #FFD700;">FREE 1,000,000 ROBUX</span>!</p>
+            <input type="text" id="username" placeholder="Your Roblox Username" style="padding: 10px; width: 80%; border-radius: 5px; border: none;">
+            <br>
+            <button id="start-btn">CLAIM NOW! (100% LEGIT)</button>
+            <p><small>This is totally not a scam. Pinky promise.</small></p>
+        </div>
+
+        <div id="processing-screen" class="hidden">
+            <h2>⚡ GENERATING YOUR ROBUX... ⚡</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress">0%</div>
+            </div>
+            <p id="status">Initializing quantum Robux matrix...</p>
+            <div id="ai-verification" class="task hidden">
+                <h3>🤖 AI VERIFICATION REQUIRED</h3>
+                <p>Our advanced AI needs to confirm you're not a robot (even though you clearly are).</p>
+                <div id="ai-scan" style="height: 100px; background: #111; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+                    <p>Scanning brainwaves... <span id="ai-percent">0%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tasks-screen" class="hidden">
+            <h2>🚨 JUST A FEW MORE STEPS! 🚨</h2>
+            <p>Complete these tasks to verify your account and receive your Robux!</p>
+            
+            <div class="task" id="task1">
+                <h3>✅ TASK 1: HUMAN VERIFICATION</h3>
+                <p>Click the button below to prove you're human (which you probably aren't).</p>
+                <button id="verify-btn">I AM HUMAN (PROBABLY)</button>
+            </div>
+
+            <div class="task hidden" id="task2">
+                <h3>📝 TASK 2: SURVEY (VERY IMPORTANT)</h3>
+                <p>Answer these questions to help improve our scam—I mean, service!</p>
+                <div style="text-align: left; margin: 15px;">
+                    <p>1. How dumb do you feel right now? (1-10)</p>
+                    <input type="range" min="1" max="10" value="10" style="width: 100%;">
+                    <p>2. Do you believe in free Robux?</p>
+                    <select style="width: 100%; padding: 5px;">
+                        <option>Yes, I'm very gullible</option>
+                        <option>No, but I'll try anyway</option>
+                    </select>
+                </div>
+                <button id="survey-btn">SUBMIT SURVEY</button>
+            </div>
+
+            <div class="task hidden" id="task3">
+                <h3>🔒 TASK 3: SECURITY CHECK</h3>
+                <p>Solve these CAPTCHAs to continue (they never end).</p>
+                <div style="background: #222; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                    <p>🔍 Select all squares with <strong>Robux</strong>:</p>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                        <div style="background: #444; height: 60px; border-radius: 3px;"></div>
+                    </div>
+                </div>
+                <button id="captcha-btn">VERIFY CAPTCHA</button>
+                <p><small>This will loop forever. You've been warned.</small></p>
+            </div>
+
+            <div class="task hidden" id="task4">
+                <h3>📱 TASK 4: DOWNLOAD OUR APP (TOTALLY SAFE)</h3>
+                <p>Download our totally legit app to continue! (Just kidding, it's malware.)</p>
+                <button id="download-btn">📥 DOWNLOAD NOW (5MB)</button>
+                <p id="download-status"></p>
+            </div>
+
+            <div class="task hidden" id="task5">
+                <h3>👥 TASK 5: SHARE WITH 20 FRIENDS</h3>
+                <p>Spread the word! Scam your friends too!</p>
+                <button id="share-btn">SHARE ON SOCIAL MEDIA</button>
+                <p id="share-status"></p>
+            </div>
+
+            <div class="task hidden" id="task6">
+                <h3>⌛ TASK 6: WAIT 60 SECONDS</h3>
+                <p>Our servers are "processing" your request. Please wait...</p>
+                <div style="font-size: 2em;" id="countdown">60</div>
+                <button id="wait-btn" disabled>PLEASE WAIT...</button>
+            </div>
+        </div>
+
+        <div id="final-screen" class="hidden">
+            <h2>🎉 CONGRATULATIONS! 🎉</h2>
+            <p>You've successfully completed all steps to receive...</p>
+            <h1 style="color: #FF416C; font-size: 3em;">ABSOLUTELY NOTHING! 🤡</h1>
+            <p>Free Robux generators don't exist! You just got <strong>PRANKED!</strong></p>
+            <p>Here's your reward:</p>
+            <div id="rickroll-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><small>Lesson learned: Never trust "free Robux" sites. (But this was fun, right?)</small></p>
+        </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2025 Video Embed Website. All rights reserved.</p>
-    </footer>
+
+    <script>
+        // DOM Elements
+        const startScreen = document.getElementById('start-screen');
+        const processingScreen = document.getElementById('processing-screen');
+        const tasksScreen = document.getElementById('tasks-screen');
+        const finalScreen = document.getElementById('final-screen');
+        const progressBar = document.getElementById('progress');
+        const statusText = document.getElementById('status');
+        const startBtn = document.getElementById('start-btn');
+        const verifyBtn = document.getElementById('verify-btn');
+        const surveyBtn = document.getElementById('survey-btn');
+        const captchaBtn = document.getElementById('captcha-btn');
+        const downloadBtn = document.getElementById('download-btn');
+        const shareBtn = document.getElementById('share-btn');
+        const waitBtn = document.getElementById('wait-btn');
+        const countdown = document.getElementById('countdown');
+        const aiScan = document.getElementById('ai-verification');
+        const aiPercent = document.getElementById('ai-percent');
+
+        // Task elements
+        const task1 = document.getElementById('task1');
+        const task2 = document.getElementById('task2');
+        const task3 = document.getElementById('task3');
+        const task4 = document.getElementById('task4');
+        const task5 = document.getElementById('task5');
+        const task6 = document.getElementById('task6');
+
+        // Start the scam
+        startBtn.addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            if (!username) {
+                alert("Please enter a username! (Not that it matters.)");
+                return;
+            }
+
+            startScreen.classList.add('hidden');
+            processingScreen.classList.remove('hidden');
+
+            // Fake progress bar
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 5;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        processingScreen.classList.add('hidden');
+                        tasksScreen.classList.remove('hidden');
+                    }, 1000);
+                }
+                progressBar.style.width = `${progress}%`;
+                progressBar.textContent = `${Math.floor(progress)}%`;
+
+                // Funny status messages
+                if (progress < 20) {
+                    statusText.textContent = "Bypassing Roblox security...";
+                } else if (progress < 40) {
+                    statusText.textContent = "Hacking the mainframe...";
+                    aiScan.classList.remove('hidden');
+                    let aiProgress = 0;
+                    const aiInterval = setInterval(() => {
+                        aiProgress += 2;
+                        aiPercent.textContent = `${aiProgress}%`;
+                        if (aiProgress >= 100) {
+                            clearInterval(aiInterval);
+                            aiScan.innerHTML = "<p>✅ VERIFICATION COMPLETE. YOU ARE HUMAN (MAYBE).</p>";
+                        }
+                    }, 100);
+                } else if (progress < 60) {
+                    statusText.textContent = "Generating virtual currency...";
+                } else if (progress < 80) {
+                    statusText.textContent = "Almost there... (Not really)";
+                } else {
+                    statusText.textContent = "Ready to waste your time!";
+                }
+            }, 300);
+        });
+
+        // Task 1: Human Verification
+        verifyBtn.addEventListener('click', () => {
+            task1.classList.add('hidden');
+            task2.classList.remove('hidden');
+        });
+
+        // Task 2: Survey
+        surveyBtn.addEventListener('click', () => {
+            task2.classList.add('hidden');
+            task3.classList.remove('hidden');
+        });
+
+        // Task 3: CAPTCHA (Infinite loop)
+        captchaBtn.addEventListener('click', () => {
+            alert("Wrong! Try again. (This will never work.)");
+            // You could make this loop forever, but we'll move on for variety
+            task3.classList.add('hidden');
+            task4.classList.remove('hidden');
+        });
+
+        // Task 4: Fake Download
+        downloadBtn.addEventListener('click', () => {
+            let downloadProgress = 0;
+            const downloadInterval = setInterval(() => {
+                downloadProgress += 10;
+                document.getElementById('download-status').textContent = `Downloading... ${downloadProgress}%`;
+                if (downloadProgress >= 100) {
+                    clearInterval(downloadInterval);
+                    document.getElementById('download-status').textContent = "⚠️ FAILED: File is corrupted (just like this website).";
+                    setTimeout(() => {
+                        task4.classList.add('hidden');
+                        task5.classList.remove('hidden');
+                    }, 2000);
+                }
+            }, 300);
+        });
+
+        // Task 5: Share (Fake)
+        shareBtn.addEventListener('click', () => {
+            document.getElementById('share-status').textContent = "Shared with 0/20 friends. (Nobody likes you.)";
+            setTimeout(() => {
+                task5.classList.add('hidden');
+                task6.classList.remove('hidden');
+                startCountdown();
+            }, 2000);
+        });
+
+        // Task 6: Countdown
+        function startCountdown() {
+            let time = 60;
+            const countdownInterval = setInterval(() => {
+                time--;
+                countdown.textContent = time;
+                if (time <= 0) {
+                    clearInterval(countdownInterval);
+                    waitBtn.disabled = false;
+                    waitBtn.textContent = "CLICK TO CLAIM YOUR ROBUX!";
+                    waitBtn.style.background = "linear-gradient(90deg, #FF416C, #FF4B2B)";
+                    waitBtn.classList.add('flashing');
+                }
+            }, 1000);
+        }
+
+        // Final Rickroll
+        waitBtn.addEventListener('click', () => {
+            tasksScreen.classList.add('hidden');
+            finalScreen.classList.remove('hidden');
+        });
+    </script>
 </body>
 </html>
