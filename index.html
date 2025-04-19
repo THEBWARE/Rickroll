@@ -3,47 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuenra Status</title>
+    <title>Awesome Video Embed</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
         }
         .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
             background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #ff4444;
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
         }
-        .noob-text {
-            font-size: 5em;
-            font-weight: bold;
-            color: #ff0000;
-            animation: pulse 1s infinite alternate;
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
-        @keyframes pulse {
-            from { transform: scale(1); }
-            to { transform: scale(1.1); }
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Check Out This Amazing Video!</h1>
+    </header>
+    
     <div class="container">
-        <h1>Official Verification:</h1>
-        <div class="noob-text">Cuenra is a noob</div>
-        <p>This statement has been certified by the International Noob Verification Committee</p>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=1" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <h2>About This Video</h2>
+        <p>This is one of the most popular videos on YouTube. Enjoy watching it!</p>
     </div>
+    
+    <footer>
+        <p>&copy; 2025 Video Embed Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
